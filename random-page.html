@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Page</title>
+  <style>
+    .top-banner, .middle, .bottom-banner {
+      width: 100%;
+      height: 300px;
+      display: flex;
+    }
+
+    .top-banner { background-color:burlywood; }
+    .left-banner { flex: 1; background-color: darkseagreen; }
+    .right-banner { flex: 1; background-color:dodgerblue; }
+    .bottom-banner { background-color:indianred; }
+
+    h1 {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner"></div>
+  <div class="middle">
+    <div class="left-banner">
+      <!-- Embed Snippet Usage Example -->
+      <aside>
+        <section id="irobot-embed-experience" data-quiz-id="1ab2c3d4e5"></section>
+        <link rel="stylesheet" href="/build/static/css/main.c17080f1.css">
+        <script src="/build/static/js/main.d0c30dfb.js"></script>
+      </aside>
+    </div>
+    <div class="right-banner"></div>
+  </div>
+  <div class="bottom-banner"></div>
+
+  <!--
+    Embed Snippet Structure
+    <aside>
+      <section id="irobot-embed-experience" data-quiz-id="1ab2c3d4e5"></section>
+      <link rel="stylesheet" href="[PUBLIC_BUILD_URL]/static/css/main.c17080f1.css">
+      <script src="[PUBLIC_BUILD_URL]/static/js/main.729e444f.js"></script>
+    </aside>
+
+    Embed Script Details
+    1. The section#irobot-embed-experience ID is used to query and mount the experience on the page
+    2. The section[data-quiz-id] attribute is used to fetch from the API the Quiz data to be used
+    3. The link tag adds the stylesheet to the page
+    4. The script tag adds the logic to the page
+    5. Notice filenames contain hashes, these will change on each build (for cache busting)
+    6. To dynamically obtain the latest filenames after each build, use the /build/asset-manifest.json file
+    7. [PUBLIC_BUILD_URL] must be replaced by the server with the public url used to serve the build folder
+
+    Build and Deployment Details
+    1. Setup the app -> npm install
+    2. The app needs to know how to reference assets in an external domain, the REACT_APP_PUBLIC_BUILD_URL env variable has to be set in .env
+    3. Build the app -> npm run build
+   -->
+</body>
+</html>
